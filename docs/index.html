@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Propiedades · Puerto Rico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --tinta: #0f2e2b;
+    --losa: #163f3a;
+    --linea: #2a5d55;
+    --ocre: #e3a63c;
+    --cal: #eaf0e9;
+    --tenue: #9db4ad;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--tinta);
+    color: var(--cal);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .envoltura { max-width: 46rem; margin: 0 auto; padding: 2rem 1.15rem 4rem; }
+
+  .cabecera { border-bottom: 1px solid var(--linea); padding-bottom: 1.4rem; margin-bottom: 2rem; }
+  .cabecera__marca {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 8vw, 2.9rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.65rem;
+  }
+  .cabecera__marca em { font-style: italic; color: var(--ocre); }
+  .cabecera__estado {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--tenue);
+    margin: 0;
+  }
+  .cabecera__estado b { color: var(--ocre); font-weight: 500; }
+  .cabecera__filtros {
+    font-size: 0.85rem; color: var(--tenue); margin: 0.75rem 0 0; line-height: 1.5;
+  }
+
+  .grupo { margin-bottom: 2.4rem; }
+  .grupo__dia {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--tenue);
+    display: flex; align-items: center; gap: 0.7rem;
+    margin: 0 0 0.6rem;
+  }
+  .grupo__dia::after { content: ""; flex: 1; height: 1px; background: var(--linea); }
+  .grupo__cuenta { order: 3; color: var(--linea); }
+  .grupo__lista { list-style: none; margin: 0; padding: 0; }
+
+  .fila { border-bottom: 1px solid rgba(42, 93, 85, 0.5); }
+  .fila__enlace {
+    display: flex; align-items: baseline; gap: 1rem;
+    padding: 0.95rem 0.6rem 0.95rem 0.85rem;
+    color: inherit; text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: background 140ms ease, border-color 140ms ease;
+  }
+  .fila__enlace:hover, .fila__enlace:focus-visible {
+    background: var(--losa); border-left-color: var(--linea); outline: none;
+  }
+  .fila--nueva .fila__enlace { border-left-color: var(--ocre); }
+  .fila__texto { flex: 1; min-width: 0; }
+  .fila__meta {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--tenue); margin: 0 0 0.28rem;
+  }
+  .fila--nueva .fila__meta::before { content: "nuevo · "; color: var(--ocre); }
+  .fila__titulo { font-size: 1rem; font-weight: 500; line-height: 1.3; margin: 0; }
+  .fila__detalle { font-size: 0.78rem; color: var(--tenue); margin: 0.3rem 0 0; }
+  .fila__precio {
+    font-family: "IBM Plex Mono", monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.95rem; white-space: nowrap; margin: 0; text-align: right;
+  }
+  .fila--nueva .fila__precio { color: var(--ocre); }
+
+  .grupo--revisar { opacity: 0.92; }
+  .grupo--revisar .fila__precio, .grupo--revisar .grupo__dia { color: var(--tenue); }
+  .grupo__nota {
+    font-size: 0.82rem; color: var(--tenue); line-height: 1.55;
+    margin: 0 0 0.9rem; padding-left: 0.85rem;
+    border-left: 2px solid var(--linea);
+  }
+  .vacio { border: 1px solid var(--linea); padding: 1.6rem; }
+  .vacio p { margin: 0 0 0.5rem; }
+  .vacio__ayuda { color: var(--tenue); font-size: 0.9rem; }
+  code { font-family: "IBM Plex Mono", monospace; color: var(--ocre); }
+
+  .pie {
+    border-top: 1px solid var(--linea); margin-top: 2.5rem; padding-top: 1.1rem;
+    font-size: 0.78rem; color: var(--tenue); line-height: 1.6;
+  }
+  .pie a { color: var(--tenue); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+  <div class="envoltura">
+    <header class="cabecera">
+      <h1 class="cabecera__marca">Propiedades<br><em>Puerto Rico</em></h1>
+      <p class="cabecera__estado"><b>Primera carga</b> · 2 guardadas · 3:13 pm</p>
+      <p class="cabecera__filtros">hasta $350,000 · Apartamento, MultiFamiliar · Viejo SJ, Condado-Miramar, Hato Rey, Santurce, Guaynabo</p>
+    </header>
+    
+    <section class="grupo">
+      <h2 class="grupo__dia">Hoy<span class="grupo__cuenta">1</span></h2>
+      <ul class="grupo__lista">
+        <li class="fila">
+          <a class="fila__enlace" href="https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4899940" target="_blank" rel="noopener">
+            <div class="fila__texto">
+              <p class="fila__meta">Apartamento · San Juan - Hato Rey</p>
+              <h3 class="fila__titulo">Condominio Quintana</h3>
+              <p class="fila__detalle">3 hab · 1 baño</p>
+            </div>
+            <p class="fila__precio">$99,000</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="grupo grupo--revisar">
+      <h2 class="grupo__dia">Por confirmar<span class="grupo__cuenta">1</span></h2>
+      <p class="grupo__nota">ClasificadosOnline no divide Santurce ni Guaynabo por urbanización, así que estas caen en la zona correcta pero no necesariamente en el bloque que buscas. Verifica la dirección antes de ir.</p>
+      <ul class="grupo__lista">
+        <li class="fila">
+          <a class="fila__enlace" href="https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4899879" target="_blank" rel="noopener">
+            <div class="fila__texto">
+              <p class="fila__meta">Apartamento · San Juan - Santurce</p>
+              <h3 class="fila__titulo">Multifamily, Casa Apartamento Studio</h3>
+              <p class="fila__detalle">5 hab · 3 baños</p>
+            </div>
+            <p class="fila__precio">$290,000</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <footer class="pie">
+      Datos de <a href="https://www.clasificadosonline.com/" target="_blank" rel="noopener">ClasificadosOnline</a>.
+      Los precios y detalles se muestran tal como los publicó el vendedor — confirma todo directamente con el corredor.
+    </footer>
+  </div>
+</body>
+</html>

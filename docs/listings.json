@@ -1,0 +1,34 @@
+[
+ {
+  "_status": "match",
+  "baths": "1",
+  "beds": "3",
+  "broker": null,
+  "first_seen": "2026-08-13T15:13:03-04:00",
+  "id": "4899940",
+  "last_seen": "2026-08-13T15:13:03-04:00",
+  "municipio": "San Juan",
+  "price": 99000,
+  "source": "ClasificadosOnline",
+  "title": "Condominio Quintana",
+  "type": "Apartamento",
+  "url": "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4899940",
+  "zona": "San Juan - Hato Rey"
+ },
+ {
+  "_status": "revisar",
+  "baths": "3",
+  "beds": "5",
+  "broker": null,
+  "first_seen": "2026-08-13T15:13:03-04:00",
+  "id": "4899879",
+  "last_seen": "2026-08-13T15:13:03-04:00",
+  "municipio": "San Juan",
+  "price": 290000,
+  "source": "ClasificadosOnline",
+  "title": "Multifamily, Casa Apartamento Studio",
+  "type": "Apartamento",
+  "url": "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4899879",
+  "zona": "San Juan - Santurce"
+ }
+]
