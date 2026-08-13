@@ -1,0 +1,43 @@
+name: Buscar propiedades
+
+on:
+  schedule:
+    # 7:00 AM and 6:00 PM Puerto Rico time (UTC-4). Cron here is always UTC.
+    - cron: "0 11 * * *"
+    - cron: "0 22 * * *"
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Commit results
+        run: |
+          git config user.name "listing-watcher"
+          git config user.email "actions@github.com"
+          git add data docs
+          if git diff --staged --quiet; then
+            echo "Nada cambió."
+          else
+            git commit -m "Listings: $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

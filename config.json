@@ -1,0 +1,40 @@
+{
+  "max_price": 350000,
+  "min_price": 0,
+  "min_beds": 0,
+
+  "property_types": ["Apartamento", "MultiFamiliar"],
+
+  "_zones_note": "These are ClasificadosOnline's own area names and must match the site exactly. zones_include shows as a normal result; zones_review lands in the 'Por confirmar' section because the site doesn't split those areas by urbanizacion.",
+  "zones_include": [
+    "San Juan - Viejo SJ",
+    "San Juan - Condado-Miramar",
+    "San Juan - Hato Rey"
+  ],
+  "zones_review": [
+    "San Juan - Santurce",
+    "Guaynabo"
+  ],
+
+  "_promote_note": "A review-zone listing mentioning any of these is treated as a full match. Add urbanizaciones and condo names as you learn which ones sit in the right blocks.",
+  "zone_promote_keywords": [
+    "condado", "miramar", "ocean park", "santa teresita", "punta las marias",
+    "ashford", "magdalena",
+    "torrimar", "san patricio", "caparra", "garden hills", "villa caparra"
+  ],
+
+  "_reject_note": "A review-zone listing mentioning any of these is dropped entirely.",
+  "zone_reject_keywords": [
+    "barrio obrero", "villa palmeras", "tras talleres", "trastalleres",
+    "cantera", "buen consejo", "shanghai",
+    "finca elena", "villa mercedes", "plaza guaynabo", "guaynabo pueblo",
+    "los frailes"
+  ],
+
+  "keywords_any": [],
+  "keywords_exclude": [],
+
+  "pages_to_scan": 10,
+  "seconds_between_requests": 3,
+  "max_stored": 1500
+}
