@@ -1,5 +1,21 @@
 [
  {
+  "_status": "revisar",
+  "baths": "3",
+  "beds": "4",
+  "broker": null,
+  "first_seen": "2026-09-09T19:49:31-04:00",
+  "id": "4904017",
+  "last_seen": "2026-09-09T19:49:31-04:00",
+  "municipio": "San Juan",
+  "price": 325000,
+  "source": "ClasificadosOnline",
+  "title": "Multifamily, Bo. Obrero, 3 Unidades, $325K",
+  "type": "MultiFamiliar",
+  "url": "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4904017",
+  "zona": "San Juan - Santurce"
+ },
+ {
   "_status": "match",
   "baths": "1",
   "beds": "3",
