@@ -1,5 +1,21 @@
 [
  {
+  "_status": "revisar",
+  "baths": "4",
+  "beds": "4",
+  "broker": null,
+  "first_seen": "2026-10-01T13:18:18-04:00",
+  "id": "4904946",
+  "last_seen": "2026-10-01T13:18:18-04:00",
+  "municipio": "San Juan",
+  "price": 170000,
+  "source": "ClasificadosOnline",
+  "title": "Casa Santurce 2 pisos 4 habitaciones 4 baños",
+  "type": "MultiFamiliar",
+  "url": "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4904946",
+  "zona": "San Juan - Santurce"
+ },
+ {
   "_status": "match",
   "baths": "1",
   "beds": "2",
